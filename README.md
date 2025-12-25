@@ -1,10 +1,10 @@
-# 🚗🐾 Vehicles & Animals Image Classification with CIFAR-10
+# Vehicles & Animals Image Classification with CIFAR-10
 
 This project implements a complete Convolutional Neural Network (CNN) image classification pipeline using PyTorch, trained on the CIFAR-10 dataset and evaluated on both the standard test set and real-world smartphone images. The model is trained on the CIFAR-10 dataset and evaluated on real-world smartphone images to analyze generalization performance.
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 ### Standard Dataset
 CIFAR-10 (10 Classes)
@@ -27,7 +27,7 @@ Real-world smartphone images captured by the author (some collected from the int
 
 ---
 
-## 🗂 Project Structure
+## Project Structure
 ├── data/ <br>
 │ └── custom/<br>
 ├── model/<br>
@@ -39,7 +39,7 @@ Real-world smartphone images captured by the author (some collected from the int
 
 ---
 
-## 🧠 Model Architecture
+## Model Architecture
 
 A Convolutional Neural Network (CNN) implemented using torch.nn.Module.
 
@@ -50,7 +50,7 @@ A Convolutional Neural Network (CNN) implemented using torch.nn.Module.
 
 ---
 
-## 🏋️ Training
+## Training
 
 - Dataset automatically downloaded using torchvision.datasets
 - Images preprocessed using torchvision.transforms
@@ -58,7 +58,7 @@ A Convolutional Neural Network (CNN) implemented using torch.nn.Module.
 
 ---
 
-## 📈 Training Results
+## Training Results
 
 The model was trained for 10 epochs on the CIFAR-10 training set.
 
@@ -77,7 +77,7 @@ Accuracy: 0.9132<br>
 
 ---
 
-## 🧪 Evaluation & Results
+## Evaluation & Results
 
 ### Confusion Matrix
 ![Confusion Matrix](images/confusion_matrix.png)
@@ -88,14 +88,14 @@ Accuracy: 0.9132<br>
 
 ---
 
-## ❌ Visual Error Analysis
+## Visual Error Analysis
 Three randomly misclassified samples from the CIFAR-10 test set:
 
 ![Error Analysis](images/error_analysis.png)
 
 ---
 
-## 📱 Real-World Smartphone Image Predictions
+## Real-World Smartphone Image Predictions
 
 Predictions on custom smartphone images stored in `data/custom/`:
 
@@ -108,7 +108,7 @@ Predictions on custom smartphone images stored in `data/custom/`:
 
 ---
 
-## 🧾 Key Takeaways
+## Key Takeaways
 
 - CNN successfully learns CIFAR-10 visual patterns
 - Training is stable and well-converged
@@ -117,7 +117,7 @@ Predictions on custom smartphone images stored in `data/custom/`:
 
 ---
 
-## ▶ How to Run (Google Colab)
+##  How to Run (Google Colab)
 
 1. Clone the repository:
    ```bash
@@ -127,7 +127,7 @@ Predictions on custom smartphone images stored in `data/custom/`:
 3. Select Runtime → Run all
 
 
-#👤 Author
+# Author
 # Sohrab Hossain Sourov
 # Student ID: 210123
 
