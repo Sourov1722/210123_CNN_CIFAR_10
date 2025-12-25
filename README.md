@@ -70,17 +70,16 @@ Accuracy: 0.9132<br>
 
 
 ### Training Loss vs Epochs
-![Training Loss](images/train_loss.png)
 
-### Training Accuracy vs Epochs
-![Training Accuracy](images/train_accuracy.png)
+<img width="981" height="374" alt="download" src="https://github.com/user-attachments/assets/60af7475-9be8-4fd1-9983-018b6aa55b25" />
 
 ---
 
 ## Evaluation & Results
 
 ### Confusion Matrix
-![Confusion Matrix](images/confusion_matrix.png)
+<img width="853" height="766" alt="download" src="https://github.com/user-attachments/assets/b382e9d6-ede0-4eb4-8e80-895716a76ebb" />
+
 
 ### Key Observations
 - Strong performance on structured object classes (automobile, truck, ship)
@@ -90,8 +89,9 @@ Accuracy: 0.9132<br>
 
 ## Visual Error Analysis
 Three randomly misclassified samples from the CIFAR-10 test set:
+<img width="950" height="336" alt="download" src="https://github.com/user-attachments/assets/18c977ed-1c4c-4bb9-b9b2-6cb0c07b6bf2" />
 
-![Error Analysis](images/error_analysis.png)
+
 
 ---
 
@@ -99,7 +99,8 @@ Three randomly misclassified samples from the CIFAR-10 test set:
 
 Predictions on custom smartphone images stored in `data/custom/`:
 
-![Custom Predictions](images/custom_predictions.png)
+<img width="1182" height="581" alt="download" src="https://github.com/user-attachments/assets/4ac1d3a7-98b9-45df-8249-fbfa405aa110" />
+
 
 ### Observations
 - Vehicles are classified with high confidence
