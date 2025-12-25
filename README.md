@@ -31,7 +31,7 @@ Real-world smartphone images captured by the author (some collected from the int
 ├── dataset/ <br>
 ├── model/<br>
 │ └── 210123.pth<br>
-├── CNN_Image_Classification.ipynb<br>
+├── 210123_CNN_CIFAR_10.ipynb<br>
 ├── README.md<br>
 
 
