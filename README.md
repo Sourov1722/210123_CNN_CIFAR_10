@@ -120,8 +120,8 @@ Predictions on custom smartphone images stored in `data/custom/`:
 ## ▶ How to Run (Google Colab)
 
 1. Clone the repository:
-```bash
-git clone https://github.com/Foysal348/Vehicles-Animals-Image-Classification-with-CIFAR-10.git
+  ```bash
+  git clone https://github.com/Foysal348/Vehicles-Animals-Image-Classification-with-CIFAR-10.git
 
 2. Open CNN_Image_Classification.ipynb in Google Colab
 
