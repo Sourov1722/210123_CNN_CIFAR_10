@@ -71,7 +71,8 @@ Accuracy: 0.9132<br>
 
 ### Training Loss vs Epochs
 
-<img width="981" height="374" alt="download" src="https://github.com/user-attachments/assets/60af7475-9be8-4fd1-9983-018b6aa55b25" />
+<img width="981" height="374" alt="download" src="https://github.com/user-attachments/assets/536ff046-8920-4810-8640-95cf3735f334" />
+
 
 ---
 
