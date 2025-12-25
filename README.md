@@ -70,7 +70,8 @@ Accuracy: 0.9132<br>
 
 ### Training Loss vs Epochs
 
-<img width="981" height="374" alt="download" src="https://github.com/user-attachments/assets/536ff046-8920-4810-8640-95cf3735f334" />
+
+<img width="981" height="374" alt="download" src="https://github.com/user-attachments/assets/f649ab0c-18ae-4536-a08f-d54dacde25cb" />
 
 
 ---
@@ -78,7 +79,8 @@ Accuracy: 0.9132<br>
 ## Evaluation & Results
 
 ### Confusion Matrix
-<img width="853" height="766" alt="download" src="https://github.com/user-attachments/assets/b382e9d6-ede0-4eb4-8e80-895716a76ebb" />
+<img width="853" height="766" alt="download" src="https://github.com/user-attachments/assets/583df261-3876-4c66-9dbd-6ef5413973e4" />
+
 
 
 ### Key Observations
@@ -89,8 +91,8 @@ Accuracy: 0.9132<br>
 
 ## Visual Error Analysis
 Three randomly misclassified samples from the CIFAR-10 test set:
-<img width="950" height="336" alt="download" src="https://github.com/user-attachments/assets/18c977ed-1c4c-4bb9-b9b2-6cb0c07b6bf2" />
 
+<img width="950" height="336" alt="download" src="https://github.com/user-attachments/assets/fd614fc2-4b8d-4242-af0a-972e4268ce07" />
 
 
 ---
@@ -99,7 +101,8 @@ Three randomly misclassified samples from the CIFAR-10 test set:
 
 Predictions on custom smartphone images stored in `data/custom/`:
 
-<img width="1182" height="581" alt="download" src="https://github.com/user-attachments/assets/4ac1d3a7-98b9-45df-8249-fbfa405aa110" />
+
+<img width="1182" height="581" alt="download" src="https://github.com/user-attachments/assets/75a45823-4409-493d-934f-902f53419d78" />
 
 
 ### Observations
