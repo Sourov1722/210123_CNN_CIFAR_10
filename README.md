@@ -1,60 +1,135 @@
-# 🏎️ Animals & Vehicles Classification with CIFAR-10 🐈
-**Student ID:** 210123  
-**Course:** Neural Networks & Deep Learning  
+# 🚗🐾 Vehicles & Animals Image Classification with CIFAR-10
 
-This project implements a custom Convolutional Neural Network (CNN) using **PyTorch** to classify images from the CIFAR-10 dataset. The project evaluates the model's performance on both standard test data and real-world images captured via a smartphone.
+This project implements a complete Convolutional Neural Network (CNN) image classification pipeline using PyTorch, trained on the CIFAR-10 dataset and evaluated on both the standard test set and real-world smartphone images. The model is trained on the CIFAR-10 dataset and evaluated on real-world smartphone images to analyze generalization performance.
 
 ---
 
-## 📊 Dataset Overview
-- **Standard Dataset:** [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) (60,000 images, 10 classes)
-- **Categories:** `airplane`, `automobile`, `bird`, `cat`, `deer`, `dog`, `frog`, `horse`, `ship`, `truck`
-- **Custom Dataset:** 10 real-world images captured by smartphone, stored in the `dataset/` folder for testing generalization.
+## 📊 Dataset
 
----
+### Standard Dataset
+CIFAR-10 (10 Classes)
 
-## 🏗️ Model Architecture (CifarNet_210123)
-The model is designed with a unique block-based structure to ensure high accuracy while preventing overfitting:
+### Classes Used
+- airplane
+- automobile
+- bird
+- cat
+- deer
+- dog
+- frog
+- horse
+- ship
+- truck
 
-- **Feature Extractor:**
-  - 3 Convolutional Blocks with **Batch Normalization** for faster convergence.
-  - ReLU Activation and Max-Pooling (2x2) layers.
-  - Output feature map size: 128 channels of 4x4.
-- **Classifier:**
-  - Fully Connected (Dense) layers.
-  - **Dropout (0.3)** to improve generalization on real-world images.
-  - Final output layer with 10 neurons (Softmax).
-
-
-
-[Image of a convolutional neural network architecture for image classification]
+### Custom Dataset
+Real-world smartphone images captured by the author (some collected from the internet) and stored in: data/custom/
 
 
 ---
 
-## 📈 Project Workflow & Results
+## 🗂 Project Structure
+├── data/ <br>
+│ └── custom/<br>
+├── model/<br>
+│ └── 210123.pth<br>
+├── CNN_Image_Classification.ipynb<br>
+├── README.md<br>
 
-### 1. Training Performance
-The model was trained for 10 epochs using the Adam optimizer. 
-- **Learning Rate:** 0.001
-- **Loss Function:** Cross-Entropy Loss
-- **Final Accuracy:** Achieved high validation accuracy with stable loss reduction.
 
-### 2. Evaluation
-- **Confusion Matrix:** Analyzes per-class performance, highlighting strengths in vehicle detection and minor confusion between similar animal classes (e.g., cat vs dog).
-- **Error Analysis:** Visualizes the top 3 misclassified images from the test set to understand model limitations.
-
-### 3. Real-World Testing
-The model processes images from the `dataset/` folder, applying standard normalization:
-- Outputs class prediction.
-- Displays confidence score (%).
-- Shows the model's ability to handle "Domain Shift" (from low-res CIFAR to high-res phone photos).
 
 ---
 
-## 📂 Repository Structure
-```text
-├── dataset/             # Real-world smartphone images for testing
-├── model/               # Contains the trained weights (210123.pth)
-├── 210123.ipynb         # Main Google Colab Notebook
-└── README.md            # Project documentation
+## 🧠 Model Architecture
+
+A Convolutional Neural Network (CNN) implemented using torch.nn.Module.
+
+### Key Layers
+- Convolution + ReLU
+- Max Pooling
+- Fully Connected Layers
+
+---
+
+## 🏋️ Training
+
+- Dataset automatically downloaded using torchvision.datasets
+- Images preprocessed using torchvision.transforms
+- Model trained on CIFAR-10 training set
+
+---
+
+## 📈 Training Results
+
+The model was trained for 10 epochs on the CIFAR-10 training set.
+
+### Final Epoch Log
+
+Epoch [10/10]<br>
+Loss: 0.2490<br>
+Accuracy: 0.9132<br>
+
+
+### Training Loss vs Epochs
+![Training Loss](images/train_loss.png)
+
+### Training Accuracy vs Epochs
+![Training Accuracy](images/train_accuracy.png)
+
+---
+
+## 🧪 Evaluation & Results
+
+### Confusion Matrix
+![Confusion Matrix](images/confusion_matrix.png)
+
+### Key Observations
+- Strong performance on structured object classes (automobile, truck, ship)
+- Some confusion among visually similar animal classes (cat, dog, deer, bird)
+
+---
+
+## ❌ Visual Error Analysis
+Three randomly misclassified samples from the CIFAR-10 test set:
+
+![Error Analysis](images/error_analysis.png)
+
+---
+
+## 📱 Real-World Smartphone Image Predictions
+
+Predictions on custom smartphone images stored in `data/custom/`:
+
+![Custom Predictions](images/custom_predictions.png)
+
+### Observations
+- Vehicles are classified with high confidence
+- Animal classes occasionally show confusion
+- Confidence varies due to domain shift
+
+---
+
+## 🧾 Key Takeaways
+
+- CNN successfully learns CIFAR-10 visual patterns
+- Training is stable and well-converged
+- Real-world testing reveals generalization limits
+- End-to-end deep learning workflow demonstrated
+
+---
+
+## ▶ How to Run (Google Colab)
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Foysal348/Vehicles-Animals-Image-Classification-with-CIFAR-10.git
+
+2. Open CNN_Image_Classification.ipynb in Google Colab
+
+3. Select Runtime → Run all
+
+#👤 Author
+# Sohrab Hossain Sourov
+# Student ID: 210123
+
+
+
