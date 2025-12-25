@@ -28,8 +28,7 @@ Real-world smartphone images captured by the author (some collected from the int
 ---
 
 ## Project Structure
-├── data/ <br>
-│ └── custom/<br>
+├── dataset/ <br>
 ├── model/<br>
 │ └── 210123.pth<br>
 ├── CNN_Image_Classification.ipynb<br>
